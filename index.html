@@ -2,6 +2,20 @@
 <html>
     <head>
         <title>Class Randomizer</title>
+        <style>
+            button{
+                border-radius: 10%;
+                border-style: ridged;
+                background-color: silver;
+            }
+            body{
+                background-color: black;
+            }
+            h1, div{
+               color: silver; 
+            }
+        </style>
+        
     </head>
     <body>
         <h1>Randomly Choose a Student</h1>
@@ -12,6 +26,14 @@
         <button id ="teacherButton">Click Me!</button>
         <div id ="teacherDisplay"></div>
 
+        <h1>Add a Student to the Class</h1>
+        <input type = "text" id ="student"><button id="add">Add!</button></input>
+        <div id ="addedDisplay"></div>
+        
+        <h1>Add a Teacher to the Class</h1>
+        <input type = "text" id ="teacher"><button id="addT">Add!</button></input>
+        <div id ="addedTeachDisplay"></div>
+        
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src = script.js></script>
     </body>
